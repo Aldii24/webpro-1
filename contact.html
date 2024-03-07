@@ -97,21 +97,16 @@
             text-align: center;
         }
 
-        .form form input {
-            display: flex;
-            flex-direction: column;
-        }
-
         .input {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             border: 1px solid #222;
             width: 500px;
             height: 400px;
             padding: 50px;
             border-radius: 4px;
-            margin: 0 auto;
             box-shadow: 1px 2px 10px 5px #222;
         }
 
@@ -146,6 +141,8 @@
             font-weight: bold;
             font-size: 15px;
         }
+
+
 
         .btn {
             margin-top: 10px;
@@ -216,13 +213,20 @@
                 display: block;
             }
 
+            form {
+                display: flex;
+                justify-content: center;
+            }
+
             .input {
                 width: 300px;
                 height: 500px;
             }
 
             .input-item {
-                margin-left: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .input-item input {
