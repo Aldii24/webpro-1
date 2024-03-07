@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Space+Grotesk:wght@300..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Madimi One", sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            padding: 20px 5%;
+            justify-content: space-between;
+            background-color: #222;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .navbar-logo a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .navbar-nav {
+            display: flex;
+            gap: 10px;
+            font-size: 20px;
+        }
+
+        .navbar-nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navbar-nav a::after {
+            content: '';
+            display: block;
+            border-bottom: 0.1rem solid #fff;
+            padding-bottom: 0.2rem;
+            transition: .3s linear;
+            transform: scaleX(0);
+            -webkit-transform: scaleX(0);
+            -moz-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            -o-transform: scaleX(0);
+            -webkit-transition: .3s linear;
+            -moz-transition: .3s linear;
+            -ms-transition: .3s linear;
+            -o-transition: .3s linear;
+        }
+
+        .navbar-nav a:hover::after {
+            transform: scaleX(0.5);
+            -webkit-transform: scaleX(0.5);
+            -moz-transform: scaleX(0.5);
+            -ms-transform: scaleX(0.5);
+            -o-transform: scaleX(0.5);
+        }
+
+        .container {
+            width: 100%;
+            padding: 150px 5%;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .footer {
+            padding: 130px 5%;
+            background-color: #222;
+        }
+
+        .footer p {
+            color: #fff;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="">ALDI IRAWAN</a>
+            </div>
+            <div class="navbar-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="table.html">Table</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>ABOUT PAGE</h1>
+        <div class="img">
+            <img src="burger-3.png" alt="">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; 2024 - ALDI IRAWAN [23.0504.0080]</p>
+    </div>
+</body>
+
+</html>
