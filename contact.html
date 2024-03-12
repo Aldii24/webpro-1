@@ -287,10 +287,11 @@
                     </div>
                     <div class="input-item">
                         <label for="">Masukkan Pesan</label>
-                        <textarea name="" id="" cols="25" rows="5" placeholder="Masukkan Pesan"></textarea>
+                        <textarea id="messagePerson" cols="25" rows="5" placeholder="Masukkan Pesan"></textarea>
                     </div>
                     <div class="btn">
-                        <button>Kirim Pesan <i class="fa-solid fa-paper-plane"></i></button>
+                        <button onclick="sendMessage()" id="btn">Kirim Pesan <i
+                                class="fa-solid fa-paper-plane"></i></button>
                     </div>
                 </div>
             </form>
@@ -314,6 +315,13 @@
                 navbarNav.classList.remove('active');
             }
         })
+
+        function sendMessage() {
+            const messagePerson = document.getElementById('messagePerson').value
+            const number = '6281372648563'
+            const whatsappLink = `https://wa.me/${number}?text=${encodeURIComponent(messagePerson)}`
+            window.open(whatsappLink, '_blank')
+        }
     </script>
 </body>
 
